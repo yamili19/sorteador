@@ -12,4 +12,5 @@ public interface ISorteoService {
 
     public Sorteo getUltimoSorteo();
 
+    public void resetear();
 }

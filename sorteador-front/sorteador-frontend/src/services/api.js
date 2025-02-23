@@ -15,6 +15,16 @@ export const getPremios = async () => {
   return response.data;
 };
 
+export const resetearSorteo = async () => {
+  try {
+    const response = await api.post("/sorteo/resetear");
+    return response.data;
+  } catch (error) {
+    console.error("Error al resetear el sorteo:", error);
+    throw error;
+  }
+};
+
 export const getHistorial = async () => {
   const response = await api.get("/sorteo/listar");
   return response.data;

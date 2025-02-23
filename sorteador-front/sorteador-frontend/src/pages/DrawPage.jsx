@@ -3,7 +3,8 @@ import PremioComponent from "../components/Draw/PremioComponent";
 import SorteoComponent from "../components/Draw/SorteoComponent";
 import HistorialComponent from "../components/Draw/HistorialComponent";
 import "./DrawPage.css";
-import { getPremios, getHistorial, getUltimoSorteo } from "../services/api";
+import { getPremios, getHistorial, getUltimoSorteo, resetearSorteo } from "../services/api";
+import { useNavigate } from "react-router-dom";
 
 const DrawPage = () => {
   const [premio, setPremio] = useState(null);
@@ -13,6 +14,8 @@ const DrawPage = () => {
   const [isSortearEnabled, setIsSortearEnabled] = useState(true);
   const [isSiguientePremioEnabled, setIsSiguientePremioEnabled] = useState(false);
   const [finSorteo, setFinSorteo] = useState(false);
+
+  const navigate = useNavigate(); // Hook para redirigir
 
   useEffect(() => {
     const cargarPremios = async () => {
@@ -57,6 +60,28 @@ const DrawPage = () => {
     }
   };
 
+  // Función para resetear y redirigir
+  const handleResetAndReturn = async () => {
+    try {
+      // Llamamos a la función de reset en el API
+      await resetearSorteo();
+
+      // Limpiamos los estados del frontend
+      setPremio(null);
+      setHistorial([]);
+      setListaPremios([]);
+      setIndicePremio(0);
+      setIsSortearEnabled(true);
+      setIsSiguientePremioEnabled(false);
+      setFinSorteo(false);
+
+      // Redirigimos a la página principal
+      navigate("/");  // Redirige a la página principal
+    } catch (error) {
+      console.error("Error al resetear el sorteo:", error);
+    }
+  };
+
   return (
     <div className="draw-page">
       <div className="left">
@@ -77,6 +102,10 @@ const DrawPage = () => {
       <div className="right">
         <HistorialComponent historial={historial} />
       </div>
+
+      <button onClick={handleResetAndReturn} className="reset-button">
+        Resetear y Volver
+      </button>
 
       {finSorteo && <div className="fin-sorteo">🎉 Fin del sorteo Felicitaciones a los ganadores 🎉</div>}
     </div>

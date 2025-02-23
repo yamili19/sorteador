@@ -80,5 +80,13 @@ public class SorteoRepository {
         }
         return lastSorteo;
     }
+
+    // Nuevo método deleteAll() para eliminar todos los sorteos, premios y participantes
+    public void clear() {
+        sorteos.clear();           // Elimina todos los sorteos
+        premios.clear();           // Opcional: Limpiar la lista de premios si es necesario
+        participantes.clear();     // Opcional: Limpiar la lista de participantes si es necesario
+        lastSorteo = null;         // Opcional: Resetear el último sorteo
+    }
 }
 
