@@ -1,0 +1,44 @@
+.prize-form {
+    background-color: white; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    max-width: 400px; /* Ancho máximo */
+    margin: 20px auto; /* Centrar el formulario */
+  }
+
+  .prize-form h3 {
+    color: black; /* Texto en negro */
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Mantiene el botón y los inputs con su estilo original */
+  .prize-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  

@@ -1,0 +1,35 @@
+/* src/components/HistorialComponent.css */
+
+.historial-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #caecff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  }
+  
+  .historial-component h3 {
+    font-size: 1.rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .historial-component ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .historial-component li {
+    font-size: 1.1rem;
+    color: #555;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .historial-component li:last-child {
+    border-bottom: none;
+  }
+  

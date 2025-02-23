@@ -1,0 +1,7 @@
+.upload-title {
+    text-align: center;      /* Centra el texto */
+    color:blue;            /* Cambia el color a blanco */
+    font-size: 3rem;         /* Aumenta el tamaño de la fuente */
+    margin-bottom: 20px;
+    margin-left: 60px;     /* Espacio debajo del título */
+  }

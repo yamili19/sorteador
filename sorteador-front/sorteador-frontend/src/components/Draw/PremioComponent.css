@@ -1,0 +1,63 @@
+/* src/components/PremioComponent.css */
+
+.premio-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #caecff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+
+  
+  .premio-component h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .premio-component h4 {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .premio-component img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #0277bd;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .premio-component h3 {
+    font-size: 1.5rem;
+    color: black; /* Cambia el color del texto del título a negro */
+  }
+  
+  .premio-component p {
+    font-size: 1.2rem;
+    color: black; /* Cambia el color del texto del patrocinador a negro */
+  }
+  
+
+  

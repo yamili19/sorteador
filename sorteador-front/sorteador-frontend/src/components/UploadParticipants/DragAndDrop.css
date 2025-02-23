@@ -1,0 +1,70 @@
+/* Estilos para la zona de arrastre */
+.drop-zone {
+    width: 300px;
+    height: 200px;
+    border: 3px dashed #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 50px auto;
+    background-color: rgba(135, 206, 235);
+    transition: all 0.3s ease-in-out;
+}
+
+.drop-zone:hover {
+    background-color: rgba(0, 0, 255);
+}
+
+.drop-zone p {
+    margin: 0;
+}
+
+/* Estilo de mensaje */
+.message {
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000; /* Cambiar color del texto a negro */
+}
+
+button {
+    display: block; /* Hace que el botón ocupe su propia línea */
+    background-color: #0277bd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px auto 0; /* Espacio entre el drop-zone y el botón */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #01579b;
+}
+
+.upload-button {
+    background-color: #447ead; /* Azul petróleo */
+    color: white;              /* Color del texto blanco */
+    padding: 15px 30px;        /* Aumenta el tamaño del botón */
+    font-size: 1.2rem;         /* Tamaño de la fuente */
+    border: none;              /* Sin borde */
+    border-radius: 5px;        /* Bordes redondeados */
+    cursor: pointer;          /* Cambia el cursor a mano cuando pasa sobre el botón */
+    transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+  }
+  
+  .upload-button:hover {
+    background-color: #164564; /* Cambio de color cuando el cursor pasa sobre el botón */
+  }
+
+

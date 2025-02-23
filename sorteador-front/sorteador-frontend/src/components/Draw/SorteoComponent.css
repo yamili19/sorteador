@@ -1,0 +1,39 @@
+/* src/components/SorteoComponent.css */
+
+.sorteo-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #caecff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .sorteo-component h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .sorteo-component .resultado {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  button.sortear-button {
+    padding: 12px 20px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  button.sortear-button:hover {
+    background-color: #E64A19;
+  }
+  

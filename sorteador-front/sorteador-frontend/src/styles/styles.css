@@ -1,0 +1,8 @@
+/* src/styles/global.css */
+body {
+  background-color: #e7eaee; /* Azul petróleo */
+  background-image: url("./assets/Logo-UTN.png");
+  background-position: left top;
+  background-size: 800px; /* Ajusta el tamaño del logo */
+  margin: 0; /* Evita los márgenes por defecto */
+}

@@ -1,0 +1,26 @@
+.prize-list {
+    background-color: #007bff; /* Azul */
+    color: white; /* Texto en blanco */
+    padding: 15px;
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 400px; /* Ancho máximo */
+    margin: 20px auto; /* Centrar */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+  
+  .prize-list h3 {
+    text-align: center;
+  }
+  
+  .prize-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .prize-list li {
+    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
